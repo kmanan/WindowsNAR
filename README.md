@@ -15,6 +15,8 @@ A simple Windows application that displays all network adapters and allows you t
 
 Download the latest version from the [Releases page](https://github.com/yourusername/NetworkAdapterRestarter/releases/latest).
 
+<img width="486" height="413" alt="image" src="https://github.com/user-attachments/assets/a7a97a62-1691-4dc4-84b9-d443cea19dff" />
+
 ## Installation
 
 1. Download `NetworkAdapterRestarter.exe` from the latest release
@@ -46,7 +48,7 @@ The application uses Windows `netsh` commands:
 ## Building from Source
 
 ### Prerequisites
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 
 ### Build Steps
 
