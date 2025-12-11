@@ -1,6 +1,6 @@
 # Network Adapter Restarter
 
-A simple Windows application that displays all network adapters and allows you to restart any adapter with a single click.
+A simple Windows application that displays all network adapters and allows you to restart any adapter with a single click. Because someone in the Windows team thought that a perfectly great network adapter reset troubleshooter had to die.
 
 ![App Icon](icon.ico)
 
