@@ -1,0 +1,35 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0/win-x64",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {},
+    ".NETCoreApp,Version=v8.0/win-x64": {
+      "NetworkAdapterRestarter/1.0.0": {
+        "dependencies": {
+          "Microsoft.NET.ILLink.Tasks": "8.0.22"
+        },
+        "runtime": {
+          "NetworkAdapterRestarter.dll": {}
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/8.0.22": {}
+    }
+  },
+  "libraries": {
+    "NetworkAdapterRestarter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MhcMithKEiyyNkD2ZfbDZPmcOdi0GheGfg8saEIIEfD/fol3iHmcV8TsZkD4ZYz5gdUuoX4YtlVySUU7Sxl9SQ==",
+      "path": "microsoft.net.illink.tasks/8.0.22",
+      "hashPath": "microsoft.net.illink.tasks.8.0.22.nupkg.sha512"
+    }
+  }
+}

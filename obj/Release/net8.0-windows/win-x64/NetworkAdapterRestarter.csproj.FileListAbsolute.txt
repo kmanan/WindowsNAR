@@ -1,0 +1,16 @@
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\icon.ico
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.exe
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.deps.json
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.runtimeconfig.json
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.dll
+E:\App Dev\NAR\WindowsNAR\bin\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.pdb
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.GeneratedMSBuildEditorConfig.editorconfig
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.AssemblyInfoInputs.cache
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.AssemblyInfo.cs
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.csproj.CoreCompileInputs.cache
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.sourcelink.json
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.dll
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\refint\NetworkAdapterRestarter.dll
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.pdb
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\NetworkAdapterRestarter.genruntimeconfig.cache
+E:\App Dev\NAR\WindowsNAR\obj\Release\net8.0-windows\win-x64\ref\NetworkAdapterRestarter.dll
