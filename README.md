@@ -8,6 +8,7 @@ A simple Windows application that displays all network adapters and allows you t
 
 - **View All Adapters**: Lists all network adapters on your system
 - **One-Click Restart**: Disable and re-enable adapters instantly
+- **Auto-Restart Monitor**: Watches a selected adapter and restarts it after repeated no-traffic/no-response checks
 - **Administrator Access**: Runs with elevated privileges automatically
 - **Clean Interface**: Simple, straightforward UI
 
@@ -30,11 +31,19 @@ Download the latest version from the [Releases page](https://github.com/youruser
 5. Confirm the restart
 6. The adapter will be disabled then re-enabled (takes ~1-2 seconds)
 
+### Auto-Restart Monitoring
+
+1. Select the adapter you want the app to watch
+2. Check "Auto-restart selected adapter when traffic stops"
+3. Leave the app running
+
+The monitor checks the selected adapter every 120 seconds. It first uses Windows adapter status and byte counters. Only when Windows shows no traffic movement does it try a small connectivity check from that adapter. If there is no activity and no response for 3 checks in a row, the app restarts that adapter automatically.
+
 ## Requirements
 
 - **Operating System**: Windows 10 or Windows 11
 - **Permissions**: Administrator privileges
-- **.NET Runtime**: Not required (self-contained executable)
+- **.NET Runtime**: Requires the .NET 8 Windows Desktop Runtime for the small publish build
 
 ## How It Works
 
@@ -61,12 +70,12 @@ The application uses Windows `netsh` commands:
    dotnet build -c Release
    ```
 
-3. Create single-file executable:
+3. Create the small single-file executable:
    ```bash
-   dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true -p:PublishTrimmed=true
+   dotnet publish -c Release -r win-x64 --self-contained false -p:PublishSingleFile=true
    ```
 
-4. Executable location: `bin\Release\net6.0-windows\win-x64\publish\NetworkAdapterRestarter.exe`
+4. Executable location: `bin\Release\net8.0-windows\win-x64\publish\NetworkAdapterRestarter.exe`
 
 ## Why Use This?
 
