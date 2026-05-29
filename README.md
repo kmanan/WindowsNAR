@@ -16,7 +16,7 @@ A simple Windows application that displays all network adapters and allows you t
 
 Download the latest version from the [Releases page](https://github.com/yourusername/NetworkAdapterRestarter/releases/latest).
 
-<img width="486" height="413" alt="image" src="https://github.com/user-attachments/assets/a7a97a62-1691-4dc4-84b9-d443cea19dff" />
+<img width="486" height="473" alt="Screenshot 2026-05-29 091804" src="https://github.com/user-attachments/assets/41b774fc-ee74-4a4a-8a65-4cf8fcfb935a" />
 
 ## Installation
 
