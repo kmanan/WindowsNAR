@@ -9,6 +9,8 @@ A simple Windows application that displays all network adapters and allows you t
 - **View All Adapters**: Lists all network adapters on your system
 - **One-Click Restart**: Disable and re-enable adapters instantly
 - **Auto-Restart Monitor**: Watches a selected adapter and restarts it after repeated no-traffic/no-response checks
+- **Advanced Adapter View**: Keeps the default list focused on normal Ethernet/Wi-Fi adapters, with an option to show VPN, virtual, Bluetooth, and other advanced adapters
+- **Tray Minimize**: Minimizes to the Windows notification area so monitoring can continue quietly
 - **Administrator Access**: Runs with elevated privileges automatically
 - **Clean Interface**: Simple, straightforward UI
 
@@ -39,7 +41,9 @@ Download the latest version from the [Releases page](https://github.com/youruser
 2. Check "Auto-restart selected adapter when traffic stops"
 3. Leave the app running
 
-The monitor checks the selected adapter every 120 seconds. It first uses Windows adapter status and byte counters. Only when Windows shows no traffic movement does it try a small connectivity check from that adapter. If there is no activity and no response for 3 checks in a row, the app restarts that adapter automatically.
+The monitor checks the selected adapter immediately, then every 30 seconds. It tracks the selected adapter by Windows interface ID, then checks adapter status, IPv4 address, IPv4 gateway, and usable connectivity from that adapter. Failed WiFi connect/disconnect traffic does not count as healthy by itself. If the selected adapter is disconnected or has no usable connectivity for 2 checks in a row, the app restarts that adapter automatically.
+
+When minimized, the app moves to the Windows notification area and keeps monitoring. Double-click the tray icon to reopen it, or right-click it and choose Exit to quit.
 
 ## Requirements
 
@@ -49,8 +53,7 @@ The monitor checks the selected adapter every 120 seconds. It first uses Windows
 
 ## How It Works
 
-The application uses Windows `netsh` commands:
-- `netsh interface show interface` - Lists all network adapters
+The application uses .NET's Windows network interface APIs to list and monitor adapters by interface ID. It uses Windows `netsh` commands only when restarting an adapter:
 - `netsh interface set interface "name" disable` - Disables an adapter
 - `netsh interface set interface "name" enable` - Enables an adapter
 
